@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPONENT LIBRARY</title>
+    <link href="styles.css" rel = "stylesheet" /> 
 </head>
 <body>
     <h1>Chavi's component library</h1>
@@ -21,74 +22,90 @@
 <hr>
 <h2>@container</h2>
 <h3>Fluid Container</h3>
-<div>this is a fluid container it will go till the end of the page</div>
+<div class= "container">this is a fluid container it will go till the end of the page</div>
 <h3>Center container</h3>
-<div>This is centered conatainer ot will cover a specific width</div>
+<div class= "container container-center">This is centered conatainer ot will cover a specific widthfdfgedbgrbgbfgbfgbgfbgfbgfbgfbgfbgfbgfbgfbfbgfbgfbgfbgfbfgbgfbgfbfgbgfbfgbgfbfbfgbfbgb</div>
 <hr>
 <h2>@Links</h2>
-<a href="/">Primary link</a>
-<a href = "/">secondary link</a>
+<a class="link primary-link" href="/">Primary link</a>
+<a class="link secondary-link" href = "/"><strong>secondary link</strong></a>
 <hr>
 <h2>@List</h2>
 <h3>Unordered List</h3>
-<ul>
+<ul class="list-non-bullet">
     <li>milk</li>
 <li>curd</li>
 <li>ice cream</li>
 <li>buttermilk</li>
 </ul>
 <h3>unordered inline list</h3>
-<ul>
-    <li>milk</li>
-<li>curd</li>
-<li>ice cream</li>
-<li>buttermilk</li>
+<ul class="list-non-bullet">
+    <li class="list-item-inline">Milk</li>
+<li class="list-item-inline">curd</li>
+<li class="list-item-inline">ice cream</li>
+<li class="list-item-inline">buttermilk</li>
 </ul>
 
 <h3> reverse order list</h3>
-<ol>
+<ol reversed>
     <li>curd</li>
     <li>ice cream</li>
     <li>buttermilk</li> 
 </ol>
 <hr>
 <h2>@Nav</h2>
-<div>I am a Brand</div>
-<ul>
-    <li>
-        <a href = "/">HOME</a>
+<nav class="navigation container">
+<div class="nav-brand">IamaBrand</div>
+<ul class="list-non-bullet nav-pills">
+    <li class="list-item-inline">
+        <a class="link link-active" href = "/">HOME</a>
     </li>
-    <li> 
-        <a href = "/">PRODUCTS</a>
+    <li class="list-item-inline"> 
+        <a class="link" href = "/">PRODUCTS</a>
     </li>
-    <LI>
-        <a href = "/">ABOUT</a>
+    <LI class="list-item-inline">
+        <a class="link" href = "/">ABOUT</a>
     </LI>
 </ul>
+</nav>
 <hr>
 <H2>@Header</H2>
-<header>
-    <img src = "Image/coding.svg"/>
-    <h1>Heading inside coding</h1>
+<header class="hero">
+    <img class="hero-img" src = "Image/coding.svg"/>
+    <h1 class="hero-heading" >Adarsh Balika the <span class="heading-inverted">Web Developer</span> </h1>
 
 </header>
 <hr>
 <h2>@sections</h2>
-<section>
-    <h3>White section</h3>
-    <P>This will have white backfroung</P>
+<section class="section">
+    <div class="container container-center">
+    <h1>White section</h1>
+    <P>This will have white background</P>
+</div>
 </section>
-<section>
-    <h3>Off white section</h3>
-    <p>This will have a gray background</p>
+<section class="section ow">
+    <div class="container container-center">
+        <h1>Off white section</h1>
+        <p>This will have a gray background bbkjkbkbb   bbbbbbbbb bbbbbbbb bbbbbbbb bbbbbbbbb bbbbbb bbbbbbbb 
+        </p>
+    </div>
+    
+
 </section>
 <hr>
 <h2>@Footer</h2>
-<footer>
-    <ul>
-        <li>SocialOne</li>
-        <li>SocialTwo</li>
-        <li>Socialthree</li>
+<footer class="footer">
+    <div class="footer-header">There will be some snall heading here</div>
+    <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+        <a class="link" href="/">Socialone</a>
+        </li>
+        <li class="list-item-inline">
+        <a class="link" href="/">SocialTwo</a>    
+        </li>
+        <li class="list-item-inline">
+        <a class="link" href="/"> Socialthree</a>
+    </li>
     </ul>
 </footer>
 </body>
